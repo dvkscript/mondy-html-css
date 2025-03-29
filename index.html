@@ -14,11 +14,10 @@
     <header class="header">
       <div class="container" style="max-width: 1800px">
         <div class="header-wrapper">
-          <input type="checkbox" id="menu" hidden />
           <div class="header-inner">
             <div class="header-inner__left">
               <a href="/">
-                <img src="assets/images/logo.png.webp" alt="Mondy Logo" />
+                <img src="./assets/images/logo.png.webp" alt="Mondy Logo" />
               </a>
             </div>
             <div class="header-inner__right">
@@ -28,7 +27,7 @@
                     <a href="/" class="header-navbar__list-active">Home</a>
                   </li>
                   <li class="header-navbar__item">
-                    <a href="/pages/about.html">About</a>
+                    <a href="./pages/about.html">About</a>
                   </li>
                   <li class="header-navbar__item">
                     <a href="#!">Buy</a>
@@ -48,7 +47,7 @@
                     </ul>
                   </li>
                   <li class="header-navbar__item">
-                    <a href="/pages/news.html">News</a>
+                    <a href="./pages/news.html">News</a>
                   </li>
                   <li class="header-navbar__item">
                     <a href="./pages/contact.html">Contact</a>
@@ -67,6 +66,7 @@
               </span>
             </label>
           </div>
+          <input type="checkbox" id="menu" hidden />
           <label for="menu" class="header-inner__menu-overlay"></label>
           <div class="header-inner__menu-list">
             <nav>
@@ -81,19 +81,43 @@
                   <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="#!">About</a>
+                  <a href="./pages/about.html">About</a>
                 </li>
                 <li>
                   <a href="#!">Buy</a>
                 </li>
                 <li>
-                  <a href="#!">Pages</a>
+                  <input type="checkbox" id="menu-pages" hidden />
+                  <label for="menu-pages">
+                    Pages
+                    <i
+                      class="bx bx-chevron-right"
+                      style="vertical-align: middle"
+                    ></i>
+                  </label>
+                  <ul>
+                    <li>
+                      <a href="./pages/about.html">
+                        About us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./pages/search-result.html">
+                        Search Result
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./pages/single-property.html">
+                        Property
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#!">News</a>
+                  <a href="./pages/news.html">News</a>
                 </li>
                 <li>
-                  <a href="#!">Contact</a>
+                  <a href="./pages/contact.html">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -152,7 +176,7 @@
           <div class="about-content">
             <div class="row">
               <div class="col-6 col-lg-12">
-                <img src="assets/images/about/1.jpg.webp" alt="about 1" />
+                <img src="./assets/images/about/1.jpg.webp" alt="about 1" />
               </div>
               <div class="col-6 col-lg-12">
                 <h3 class="text-subtitle">
@@ -173,7 +197,7 @@
             </div>
             <div class="row">
               <div class="col-6 col-lg-12">
-                <img src="assets/images/about/2.jpg.webp" alt="about 2" />
+                <img src="./assets/images/about/2.jpg.webp" alt="about 2" />
               </div>
               <div class="col-6 col-lg-12">
                 <h3 class="text-subtitle">
@@ -204,7 +228,7 @@
               <div class="col-4 col-lg-12">
                 <div class="card">
                   <img
-                    src="assets/images/property/1.jpg.webp"
+                    src="./assets/images/property/1.jpg.webp"
                     alt="property 1"
                   />
                   <div class="card-badge card-badge__new">
@@ -226,7 +250,7 @@
               <div class="col-4 col-lg-12">
                 <div class="card">
                   <img
-                    src="assets/images/property/2.jpg.webp"
+                    src="./assets/images/property/2.jpg.webp"
                     alt="property 1"
                   />
                   <div class="card-badge card-badge__offer">
@@ -248,7 +272,7 @@
               <div class="col-4 col-lg-12">
                 <div class="card">
                   <img
-                    src="assets/images/property/2.jpg.webp"
+                    src="./assets/images/property/2.jpg.webp"
                     alt="property 1"
                   />
                   <div class="card-badge card-badge__new">
@@ -316,7 +340,7 @@
                 <a href="#!" class="text-link"> Find out more </a>
               </div>
               <div class="col-5 col-lg-12">
-                <img src="assets/images/about/3.jpg.webp" alt="about" />
+                <img src="./assets/images/about/3.jpg.webp" alt="about" />
               </div>
             </div>
           </div>
@@ -330,7 +354,7 @@
             <div class="col-lg-12 col-4">
               <div class="footer-company">
                 <div>
-                  <img src="assets/images/logo.png.webp" alt="Mondy Logo" />
+                  <img src="./assets/images/logo.png.webp" alt="Mondy Logo" />
                   <p>
                     Donec quis efficitur ut. Donec quis dolor vitae eros feugiat
                     tristique id vitae massa. Proin vulputate cong volutpat.
