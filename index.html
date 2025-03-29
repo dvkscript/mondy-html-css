@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondy - Sell Faster, Save Thousands</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container" style="max-width: 1800px">
+        <div class="header-wrapper">
+          <input type="checkbox" id="menu" hidden />
+          <div class="header-inner">
+            <div class="header-inner__left">
+              <a href="/">
+                <img src="assets/images/logo.png.webp" alt="Mondy Logo" />
+              </a>
+            </div>
+            <div class="header-inner__right">
+              <nav class="header-navbar">
+                <ul class="header-navbar__list">
+                  <li class="header-navbar__item">
+                    <a href="/" class="header-navbar__list-active">Home</a>
+                  </li>
+                  <li class="header-navbar__item">
+                    <a href="/pages/about.html">About</a>
+                  </li>
+                  <li class="header-navbar__item">
+                    <a href="#!">Buy</a>
+                  </li>
+                  <li class="header-navbar__item">
+                    <span>Pages</span>
+                    <ul>
+                      <li>
+                        <a href="./pages/about.html"> About us </a>
+                      </li>
+                      <li>
+                        <a href="./pages/search-result.html"> Search Result </a>
+                      </li>
+                      <li>
+                        <a href="./pages/single-property.html"> Property </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-navbar__item">
+                    <a href="/pages/news.html">News</a>
+                  </li>
+                  <li class="header-navbar__item">
+                    <a href="./pages/contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-inner__btn">
+                <a href="#!" class="header-inner__btn-login">Sign in</a>
+                <a href="#!" class="header-inner__btn-register">Join us</a>
+              </div>
+            </div>
+            <label for="menu" class="header-inner__menu-btn">
+              <span> menu </span>
+              <span>
+                <i class="bx bx-menu" style="font-size: 18px"></i>
+              </span>
+            </label>
+          </div>
+          <label for="menu" class="header-inner__menu-overlay"></label>
+          <div class="header-inner__menu-list">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#!">Sign in</a>
+                </li>
+                <li>
+                  <a href="#!">Join us</a>
+                </li>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="#!">About</a>
+                </li>
+                <li>
+                  <a href="#!">Buy</a>
+                </li>
+                <li>
+                  <a href="#!">Pages</a>
+                </li>
+                <li>
+                  <a href="#!">News</a>
+                </li>
+                <li>
+                  <a href="#!">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <section class="hero section-wrap">
+        <div class="container">
+          <form class="search-form bg-tertiary-opacity">
+            <div class="search-form__checkbox">
+              <div class="search-form__checkbox-wrapper">
+                <input type="radio" hidden id="buy" name="search" checked />
+                <label for="buy" class="font-medium pointer"> Buy </label>
+              </div>
+              <div class="search-form__checkbox-wrapper">
+                <input type="radio" hidden id="rent" name="search" />
+                <label for="rent" class="font-medium pointer"> Rent </label>
+              </div>
+              <div class="search-form__checkbox-wrapper">
+                <input type="radio" hidden id="sell" name="search" />
+                <label for="sell" class="font-medium pointer"> Sell </label>
+              </div>
+              <div class="search-form__checkbox-wrapper">
+                <input type="radio" hidden id="property-value" name="search" />
+                <label for="property-value" class="font-medium pointer">
+                  Property Value
+                </label>
+              </div>
+              <div class="search-form__checkbox-wrapper">
+                <input type="radio" hidden id="agents" name="search" />
+                <label for="agents" class="font-medium pointer"> Agents </label>
+              </div>
+            </div>
+            <div class="search-form__input">
+              <input
+                type="text"
+                placeholder="Search by state, postcode or suburb"
+              />
+              <button class="btn-lg btn-search">search</button>
+            </div>
+            <p class="text-placeholder">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida.
+            </p>
+          </form>
+        </div>
+      </section>
+      <!-- About section -->
+      <section class="section-wrap about">
+        <div class="container">
+          <h2 class="text-title text-center">Sell Faster. Save Thousands.</h2>
+          <div class="about-content">
+            <div class="row">
+              <div class="col-6 col-lg-12">
+                <img src="assets/images/about/1.jpg.webp" alt="about 1" />
+              </div>
+              <div class="col-6 col-lg-12">
+                <h3 class="text-subtitle">
+                  We charge 2% total. No hidden fees or upfront costs.
+                </h3>
+                <p class="text-description">
+                  Donec eget efficitur ex. Donec eget dolor vitae eros feugiat
+                  tristique id vitae massa. Proin vulputate congue rutrum. Fusce
+                  lobortis a enim eget tempus. Class aptent taciti sociosqu ad
+                  litora torquent per conubia nostra, per inceptos himenaeos.
+                  Suspendisse potenti. Ut gravida mattis magna, non varius lorem
+                  sodales nec. In libero orci, ornare non nisl a, auctor euismod
+                  purus. Morbi pretium interdum vestibulum. Fusce nec eleifend
+                  ipsum. Sed non blandit tellus.
+                </p>
+                <a href="#!" class="text-link"> Find out more </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 col-lg-12">
+                <img src="assets/images/about/2.jpg.webp" alt="about 2" />
+              </div>
+              <div class="col-6 col-lg-12">
+                <h3 class="text-subtitle">
+                  How Much Can You Save? We work for you, not commission.
+                </h3>
+                <p class="text-description">
+                  Donec eget efficitur ex. Donec eget dolor vitae eros feugiat
+                  tristique id vitae massa. Proin vulputate congue rutrum. Fusce
+                  lobortis a enim eget tempus. Class aptent taciti sociosqu ad
+                  litora torquent per conubia nostra, per inceptos himenaeos.
+                  Suspendisse potenti. Ut gravida mattis magna, non varius lorem
+                  sodales nec. In libero orci, ornare non nisl a, auctor euismod
+                  purus. Morbi pretium interdum vestibulum. Fusce nec eleifend
+                  ipsum. Sed non blandit tellus.
+                </p>
+                <a href="#!" class="text-link"> Find out more </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Recently section -->
+      <section class="section-wrap recently">
+        <div class="container">
+          <h2 class="text-title text-center">Recently Add Homes</h2>
+          <div class="recently-content">
+            <div class="row">
+              <div class="col-4 col-lg-12">
+                <div class="card">
+                  <img
+                    src="assets/images/property/1.jpg.webp"
+                    alt="property 1"
+                  />
+                  <div class="card-badge card-badge__new">
+                    <span>New</span>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">$469,000</h3>
+                    <h5 class="card-subtitle">3 Bedrooms Townhouse</h5>
+                    <p class="card-description">
+                      Donec eget efficitur ex. Donec eget dolor vitae eros
+                      feugiat tristique id vitae massa. Proin vulputate congue
+                      rutrum. Fusce lobortis a enim eget tempus. Class aptent
+                      taciti sociosqu ad litora.
+                    </p>
+                    <a href="#!" class="text-link"> Find out more </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-lg-12">
+                <div class="card">
+                  <img
+                    src="assets/images/property/2.jpg.webp"
+                    alt="property 1"
+                  />
+                  <div class="card-badge card-badge__offer">
+                    <span>Offer</span>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">$369,000</h3>
+                    <h5 class="card-subtitle">3 Bedrooms Townhouse</h5>
+                    <p class="card-description">
+                      Donec eget efficitur ex. Donec eget dolor vitae eros
+                      feugiat tristique id vitae massa. Proin vulputate congue
+                      rutrum. Fusce lobortis a enim eget tempus. Class aptent
+                      taciti sociosqu ad litora.
+                    </p>
+                    <a href="#!" class="text-link"> Find out more </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-lg-12">
+                <div class="card">
+                  <img
+                    src="assets/images/property/2.jpg.webp"
+                    alt="property 1"
+                  />
+                  <div class="card-badge card-badge__new">
+                    <span>New</span>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">$560,000</h3>
+                    <h5 class="card-subtitle">3 Bedrooms Townhouse</h5>
+                    <p class="card-description">
+                      Donec eget efficitur ex. Donec eget dolor vitae eros
+                      feugiat tristique id vitae massa. Proin vulputate congue
+                      rutrum. Fusce lobortis a enim eget tempus. Class aptent
+                      taciti sociosqu ad litora.
+                    </p>
+                    <a href="#!" class="text-link"> Find out more </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Loan section -->
+      <section class="loan section-wrap">
+        <div class="container">
+          <h2 class="text-title text-center">
+            See If You Qualify for a Mortgage
+          </h2>
+          <p class="text-description">
+            Donec eget efficitur ex. Donec eget dolor vitae eros feugiat
+            tristique id vitae massa. Proin vulputate congue rutrum. Fusce
+            lobortis a enim eget tempus. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Suspendisse
+            potenti. Ut gravida mattis magna, non varius lorem sodales nec. In
+            libero orci, ornare non nisl a, auctor euismod purus. Morbi pretium
+            interdum vestibulum. Fusce nec eleifend ipsum. Sed non blandit
+            tellus.
+          </p>
+          <form class="loan-form">
+            <input type="text" placeholder="Your income" />
+            <input type="text" placeholder="Amount needed" />
+            <button class="btn-lg bg-accent uppercase font-medium">
+              submit
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="stories section-wrap">
+        <div class="container">
+          <div class="stories-content">
+            <div class="row">
+              <div class="col-7 col-lg-12">
+                <h2 class="text-title">Seller Success Stories</h2>
+                <p class="text-description">
+                  Fusce lobortis a enim eget tempus. Class aptent taciti
+                  sociosqu ad litora. Donec eget efficitur ex. Donec eget dolor
+                  vitae eros feugiat tristique id vitae massa. Proin vulputate
+                  congue rutrum. Fusce lobortis a enim eget tempus. Class aptent
+                  taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos. Suspendisse potenti. Ut gravida mattis
+                  magna, non varius lorem sodales nec. In libero orci, ornare
+                  non nisl a, auctor euismod purus. Morbi pretium interdum
+                  vestibulum. Fusce nec eleifend ipsum. Sed non blandit tellus.
+                </p>
+                <a href="#!" class="text-link"> Find out more </a>
+              </div>
+              <div class="col-5 col-lg-12">
+                <img src="assets/images/about/3.jpg.webp" alt="about" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-4">
+              <div class="footer-company">
+                <div>
+                  <img src="assets/images/logo.png.webp" alt="Mondy Logo" />
+                  <p>
+                    Donec quis efficitur ut. Donec quis dolor vitae eros feugiat
+                    tristique id vitae massa. Proin vulputate cong volutpat.
+                    Fusce lobortis a enim eget tempus.
+                  </p>
+                  <a href="#!">WE ARE HIRING</a>
+                </div>
+                <div class="footer-company-outline"></div>
+              </div>
+            </div>
+            <div class="col-2 col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                  <li><a href="#!">About us</a></li>
+                  <li><a href="#!">Services</a></li>
+                  <li><a href="#!">Clients</a></li>
+                  <li><a href="#!">Testimonials</a></li>
+                  <li><a href="#!">Careers</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-2 col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-links">
+                <h3>For Buyers</h3>
+                <ul>
+                  <li><a href="#!">Buy with us</a></li>
+                  <li><a href="#!">Papers</a></li>
+                  <li><a href="#!">Clients</a></li>
+                  <li><a href="#!">Testimonials</a></li>
+                  <li><a href="#!">Homes</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-2 col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-links">
+                <h3>For Sellers</h3>
+                <ul>
+                  <li><a href="#!">Sell With Us</a></li>
+                  <li><a href="#!">What do You Need</a></li>
+                  <li><a href="#!">Clients</a></li>
+                  <li><a href="#!">Testimonials</a></li>
+                  <li><a href="#!">Guideline</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-2 col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-links">
+                <h3>For Renters</h3>
+                <ul>
+                  <li><a href="#!">Rent with us</a></li>
+                  <li><a href="#!">Guidelines</a></li>
+                  <li><a href="#!">Apartments</a></li>
+                  <li><a href="#!">Flats</a></li>
+                  <li><a href="#!">Houses</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="height: 60px"></div>
+          <div style="height: 58px"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

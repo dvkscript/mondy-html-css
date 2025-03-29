@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/styles/global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container" style="max-width: 1800px">
+        <div class="header-wrapper">
+          <input type="checkbox" id="menu" hidden />
+          <div class="header-inner">
+            <div class="header-inner__left">
+              <a href="/">
+                <img src="../assets/images/logo.png.webp" alt="Mondy Logo" />
+              </a>
+            </div>
+            <div class="header-inner__right">
+              <nav class="header-navbar">
+                <ul class="header-navbar__list">
+                  <li class="header-navbar__item">
+                    <a href="/">Home</a>
+                  </li>
+                  <li class="header-navbar__item">
+                    <a href="/pages/about.html">About</a>
+                  </li>
+                  <li class="header-navbar__item">
+                    <a href="#!">Buy</a>
+                  </li>
+                  <li class="header-navbar__item">
+                    <span>Pages</span>
+                    <ul>
+                      <li>
+                        <a href="./about.html"> About us </a>
+                      </li>
+                      <li>
+                        <a href="./search-result.html"> Search Result </a>
+                      </li>
+                      <li>
+                        <a href="./single-property.html"> Property </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-navbar__item">
+                    <a href="./news.html" class="header-navbar__list-active"
+                      >News</a
+                    >
+                  </li>
+                  <li class="header-navbar__item">
+                    <a href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-inner__btn">
+                <a href="#!" class="header-inner__btn-login">Sign in</a>
+                <a href="#!" class="header-inner__btn-register">Join us</a>
+              </div>
+            </div>
+            <label for="menu" class="header-inner__menu-btn">
+              <span> menu </span>
+              <span>
+                <i class="bx bx-menu" style="font-size: 18px"></i>
+              </span>
+            </label>
+          </div>
+          <label for="menu" class="header-inner__menu-overlay"></label>
+          <div class="header-inner__menu-list">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#!">Sign in</a>
+                </li>
+                <li>
+                  <a href="#!">Join us</a>
+                </li>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="#!">About</a>
+                </li>
+                <li>
+                  <a href="#!">Buy</a>
+                </li>
+                <li>
+                  <a href="#!">Pages</a>
+                </li>
+                <li>
+                  <a href="#!">News</a>
+                </li>
+                <li>
+                  <a href="#!">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-top">
+        <form class="search-form">
+          <div class="search-form__checkbox">
+            <div class="search-form__checkbox-wrapper">
+              <input type="radio" hidden id="buy" name="search" checked />
+              <label for="buy" class="font-medium pointer"> Buy </label>
+            </div>
+            <div class="search-form__checkbox-wrapper">
+              <input type="radio" hidden id="rent" name="search" />
+              <label for="rent" class="font-medium pointer"> Rent </label>
+            </div>
+            <div class="search-form__checkbox-wrapper">
+              <input type="radio" hidden id="sell" name="search" />
+              <label for="sell" class="font-medium pointer"> Sell </label>
+            </div>
+            <div class="search-form__checkbox-wrapper">
+              <input type="radio" hidden id="property-value" name="search" />
+              <label for="property-value" class="font-medium pointer">
+                Property Value
+              </label>
+            </div>
+            <div class="search-form__checkbox-wrapper">
+              <input type="radio" hidden id="agents" name="search" />
+              <label for="agents" class="font-medium pointer"> Agents </label>
+            </div>
+          </div>
+          <div class="search-form__input">
+            <input
+              type="text"
+              placeholder="Search by state, postcode or suburb"
+            />
+            <button class="btn-lg btn-search">search</button>
+            <button class="btn-lg btn-show uppercase">Show filter</button>
+          </div>
+          <p class="text-placeholder">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida.
+          </p>
+        </form>
+      </section>
+      <section class="blog section-wrap">
+        <div class="container">
+          <div class="blog-content">
+            <div class="row">
+              <div class="col-4 col-lg-6 col-md-12">
+                <div class="card">
+                  <img src="../assets/images/blog/1.jpg.webp" alt="blog 1" />
+                  <div class="card-content bg-accent-100">
+                    <h5 class="card-subtitle">April 16, 2019</h5>
+                    <h4 class="card-title">
+                      How to buy a house in this market
+                    </h4>
+                    <p class="card-description">
+                      Fusce lobortis a enim eget tempus. Class aptent taciti
+                      sociosqu ad litora. Donec eget efficitur ex. Donec eget
+                      dolor vitae eros feugiat tristique id vitae massa.
+                    </p>
+                    <a href="#!" class="text-link"> Read More </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-lg-6 col-md-12">
+                <div class="card">
+                  <img src="../assets/images/blog/2.jpg.webp" alt="blog 1" />
+                  <div class="card-content bg-accent-100">
+                    <h5 class="card-subtitle">April 16, 2019</h5>
+                    <h4 class="card-title">
+                      5 Tips to get a good deal on your house
+                    </h4>
+                    <p class="card-description">
+                      Fusce lobortis a enim eget tempus. Class aptent taciti
+                      sociosqu ad litora. Donec eget efficitur ex. Donec eget
+                      dolor vitae eros feugiat tristique id vitae massa.
+                    </p>
+                    <a href="#!" class="text-link"> Read More </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-lg-6 col-md-12">
+                <div class="card">
+                  <img src="../assets/images/blog/3.jpg.webp" alt="blog 1" />
+                  <div class="card-content bg-accent-100">
+                    <h5 class="card-subtitle">April 16, 2019</h5>
+                    <h4 class="card-title">Papers you need to buy a house</h4>
+                    <p class="card-description">
+                      Fusce lobortis a enim eget tempus. Class aptent taciti
+                      sociosqu ad litora. Donec eget efficitur ex. Donec eget
+                      dolor vitae eros feugiat tristique id vitae massa.
+                    </p>
+                    <a href="#!" class="text-link"> Read More </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div>
+                    <img
+                      src="../assets/images/blog/big-1.jpg.webp"
+                      alt="blog 1"
+                    />
+                  </div>
+                  <div class="card-content bg-accent-100">
+                    <h5 class="card-subtitle">April 16, 2019</h5>
+                    <h4 class="card-title">Papers you need to buy a house</h4>
+                    <p class="card-description">
+                      Fusce lobortis a enim eget tempus. Class aptent taciti
+                      sociosqu ad litora. Donec eget efficitur ex. Donec eget
+                      dolor vitae eros feugiat tristique id vitae massa. Donec
+                      eget dolor vitae eros feugiat tristique id vitae massa.
+                      Donec eget dolor vitae eros feugiat tristique id vitae
+                      massa.
+                    </p>
+                    <a href="#!" class="text-link"> Read More </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-lg-6 col-md-12">
+                <div class="card">
+                  <img src="../assets/images/blog/4.jpg.webp" alt="blog 1" />
+                  <div class="card-content bg-accent-100">
+                    <h5 class="card-subtitle">April 16, 2019</h5>
+                    <h4 class="card-title">
+                      How to buy a house in this market
+                    </h4>
+                    <p class="card-description">
+                      Fusce lobortis a enim eget tempus. Class aptent taciti
+                      sociosqu ad litora. Donec eget efficitur ex. Donec eget
+                      dolor vitae eros feugiat tristique id vitae massa.
+                    </p>
+                    <a href="#!" class="text-link"> Read More </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-lg-6 col-md-12">
+                <div class="card">
+                  <img src="../assets/images/blog/5.jpg.webp" alt="blog 1" />
+                  <div class="card-content bg-accent-100">
+                    <h5 class="card-subtitle">April 16, 2019</h5>
+                    <h4 class="card-title">
+                      5 Tips to get a good deal on your house
+                    </h4>
+                    <p class="card-description">
+                      Fusce lobortis a enim eget tempus. Class aptent taciti
+                      sociosqu ad litora. Donec eget efficitur ex. Donec eget
+                      dolor vitae eros feugiat tristique id vitae massa.
+                    </p>
+                    <a href="#!" class="text-link"> Read More </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-lg-6 col-md-12">
+                <div class="card">
+                  <img src="../assets/images/blog/6.jpg.webp" alt="blog 1" />
+                  <div class="card-content bg-accent-100">
+                    <h5 class="card-subtitle">April 16, 2019</h5>
+                    <h4 class="card-title">Papers you need to buy a house</h4>
+                    <p class="card-description">
+                      Fusce lobortis a enim eget tempus. Class aptent taciti
+                      sociosqu ad litora. Donec eget efficitur ex. Donec eget
+                      dolor vitae eros feugiat tristique id vitae massa.
+                    </p>
+                    <a href="#!" class="text-link"> Read More </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div>
+                    <img
+                      src="../assets/images/blog/big-2.jpg.webp"
+                      alt="blog 1"
+                    />
+                  </div>
+                  <div class="card-content bg-accent-100">
+                    <h5 class="card-subtitle">April 16, 2019</h5>
+                    <h4 class="card-title">Papers you need to buy a house</h4>
+                    <p class="card-description">
+                      Fusce lobortis a enim eget tempus. Class aptent taciti
+                      sociosqu ad litora. Donec eget efficitur ex. Donec eget
+                      dolor vitae eros feugiat tristique id vitae massa. Donec
+                      eget dolor vitae eros feugiat tristique id vitae massa.
+                      Donec eget dolor vitae eros feugiat tristique id vitae
+                      massa.
+                    </p>
+                    <a href="#!" class="text-link"> Read More </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-4">
+              <div class="footer-company">
+                <div>
+                  <img src="../assets/images/logo.png.webp" alt="Mondy Logo" />
+                  <p>
+                    Donec quis efficitur ut. Donec quis dolor vitae eros feugiat
+                    tristique id vitae massa. Proin vulputate cong volutpat.
+                    Fusce lobortis a enim eget tempus.
+                  </p>
+                  <a href="#!">WE ARE HIRING</a>
+                </div>
+                <div class="footer-company-outline"></div>
+              </div>
+            </div>
+            <div class="col-2 col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                  <li><a href="#!">About us</a></li>
+                  <li><a href="#!">Services</a></li>
+                  <li><a href="#!">Clients</a></li>
+                  <li><a href="#!">Testimonials</a></li>
+                  <li><a href="#!">Careers</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-2 col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-links">
+                <h3>For Buyers</h3>
+                <ul>
+                  <li><a href="#!">Buy with us</a></li>
+                  <li><a href="#!">Papers</a></li>
+                  <li><a href="#!">Clients</a></li>
+                  <li><a href="#!">Testimonials</a></li>
+                  <li><a href="#!">Homes</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-2 col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-links">
+                <h3>For Sellers</h3>
+                <ul>
+                  <li><a href="#!">Sell With Us</a></li>
+                  <li><a href="#!">What do You Need</a></li>
+                  <li><a href="#!">Clients</a></li>
+                  <li><a href="#!">Testimonials</a></li>
+                  <li><a href="#!">Guideline</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-2 col-lg-3 col-md-6 col-sm-12">
+              <div class="footer-links">
+                <h3>For Renters</h3>
+                <ul>
+                  <li><a href="#!">Rent with us</a></li>
+                  <li><a href="#!">Guidelines</a></li>
+                  <li><a href="#!">Apartments</a></li>
+                  <li><a href="#!">Flats</a></li>
+                  <li><a href="#!">Houses</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="height: 60px"></div>
+          <div style="height: 58px"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
