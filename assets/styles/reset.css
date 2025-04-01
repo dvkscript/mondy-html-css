@@ -34,10 +34,12 @@ img {
     max-width: 100%;
     height: auto;
     width: 100%;
+    display: block;
 }
 
 input, textarea {
     font-size: inherit;
+    font-family: inherit;
 }
 
 label {

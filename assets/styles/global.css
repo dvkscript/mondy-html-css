@@ -295,6 +295,15 @@ section.page-top {
 .page-top .search-form {
     max-width: 1280px;
     margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.page-top .search-form .text-placeholder {
+    font-style: italic;
+    color: #b6b6b6;
+    opacity: 1;
+    font-weight: 500;
 }
 
 section.hero {
@@ -311,6 +320,8 @@ section.hero {
 
 .hero .search-form {
     padding: 27px 48px 31px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 }
 
 .search-form__input {
@@ -319,11 +330,17 @@ section.hero {
     margin-bottom: 23px;
 }
 
+.search-form .text-placeholder {
+    font-size: 12px;
+    font-weight: 300;
+}
+
 .search-form__input input,
 .search-form__input button {
     height: 71px;
     display: inline-block;
     padding: 1px 2px 1px 47px;
+    font-weight: 500;
 }
 
 .search-form__input input {
@@ -362,7 +379,8 @@ section.hero {
 
 .search-form__checkbox-wrapper label {
     transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
-    padding: 11px 10px;
+    padding: 13px 10px;
+    display: block;
 }
 
 .search-form__checkbox-wrapper label::after {
@@ -381,7 +399,8 @@ section.hero {
 
 .search-form__checkbox-wrapper input:checked+label {
     background-color: var(--color-accent);
-    padding: 11px 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .search-form__checkbox-wrapper input:checked+label::after {
@@ -419,8 +438,16 @@ section.hero {
     margin-bottom: 25px;
 }
 
+.recently.section-wrap {
+    padding-bottom: 52px;
+}
+
 .recently-content {
     margin-top: 90px;
+}
+
+.recently-content .card {
+    padding-bottom: 55px;
 }
 
 .recently-content .row {
@@ -467,6 +494,10 @@ section.loan {
 .loan .loan-form button {
     width: fit-content;
     padding: 21px 44px;
+}
+
+.stories-content .text-title {
+    line-height: 1;
 }
 
 .stories .stories-content .row {
@@ -530,8 +561,22 @@ section.sell {
     margin-top: 70px;
 }
 
+.agents .card .card-content {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.agents .card .card-content .card-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
 .contact .text-title {
     margin-bottom: 50px;
+}
+
+.contact .text-description {
+    margin-bottom: 16px;
 }
 
 .contact .contact-content__title .text-description {
@@ -558,6 +603,7 @@ section.sell {
 
 .contact .contact-content__info .text-subtitle {
     margin-bottom: 15px;
+    font-size: 24px;
 }
 
 .contact .contact-content__info .text-description {
@@ -568,6 +614,7 @@ section.sell {
     margin-top: 50px;
     background-color: #f5f8fa;
     padding: 61px 33px;
+    font-size: 14px;
 }
 
 .contact .contact-form input,
@@ -673,6 +720,10 @@ section.sell {
 
 .result .result-content .property .property-content .card {
     padding-bottom: 55px;
+}
+
+.result .result-content .property .property-content .card .card-subtitle {
+    margin-bottom: 8px;
 }
 
 .result .result-content .property .property-content .card .card-content .card-description>span:not(:last-child) {
@@ -796,18 +847,27 @@ section.sell {
     font-size: 18px;
 }
 
+
 .single-property>.single-property__loan>.single-property__loan-form button {
     margin-left: auto;
     display: block;
 }
 
+
 .agent-widget .card .card-content {
     padding: 35px 26px 45px;
     margin-top: 0;
 }
+.agent-widget .card .card-content .card-title {
+    font-size: 24px;
+}
 
 .agent-widget .card .card-content .card-subtitle {
     opacity: 0.8;
+    font-size: 1rem;
+}
+.agent-widget .card .card-content .card-description {
+    margin-bottom: 30px;
 }
 
 /* <==============================================================================================> */
@@ -889,7 +949,8 @@ section.sell {
     }
 
     .search-form__checkbox-wrapper input:checked+label {
-        padding: 11px 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .loan .loan-form {
@@ -925,6 +986,11 @@ section.sell {
         padding: 60px 22px 30px;
     }
 
+    .single-property {
+        max-width: 690px;
+        margin: 0 auto;
+    }
+
     .single-property>.card>.card-content>.row>div:nth-child(2) {
         text-align: left;
     }
@@ -934,8 +1000,13 @@ section.sell {
     }
 
     .agent-widget {
+        max-width: 690px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 200px;
         margin-top: 50px;
     }
+
     .result .result-content>.result-content__navbar {
         gap: 10px;
     }
@@ -979,7 +1050,8 @@ section.sell {
     }
 
     .search-form__checkbox-wrapper input:checked+label {
-        padding: 11px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .search-form__checkbox-wrapper label::after {
@@ -988,6 +1060,15 @@ section.sell {
 
     .search-form__input {
         flex-wrap: wrap;
+    }
+
+    .search-form__input input {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .search-form__input button {
+        height: 61px;
     }
 
     section.loan {
@@ -1001,6 +1082,25 @@ section.sell {
     .result .result-content {
         padding: 55px 30px 90px;
     }
+
+    .result #map {
+        height: 500px;
+    }
+
+    .single .container {
+        --container-padding: 15px;
+    }
+
+    .single-property {
+        max-width: 510px;
+    }
+
+    .agent-widget {
+        max-width: 510px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+    }
 }
 
 /* Breakpoint 576 */
@@ -1010,6 +1110,19 @@ section.sell {
     section>.container {
         --container-width: 100%;
     }
+
+
+    .footer .footer-wrapper {
+        max-width: 100%;
+    }
+
+    .footer .container {
+        --container-padding: 15px;
+    }
+
+    .single-property>.single-property__loan>.single-property__loan-form button {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1017,5 +1130,17 @@ section.sell {
     /* Section 576px */
     .result .result-content {
         padding: 55px 15px 90px;
+    }
+
+    .contact .contact-form {
+        padding: 50px 20px;
+    }
+
+    .contact .contact-form button {
+        width: fit-content;
+    }
+
+    .single-property>.single-property__loan {
+        padding: 30px 15px 25px;
     }
 }

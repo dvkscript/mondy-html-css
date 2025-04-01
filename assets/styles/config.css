@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
     --blue: #007bff;
@@ -489,25 +490,28 @@ body {
 .text-placeholder {
     opacity: 0.7;
     font-size: 0.875rem;
-    line-height: 1.8;
+    line-height: 2;
 }
 
 .text-description {
     opacity: 0.7;
     font-size: 15px;
-    line-height: 1.8;
+    line-height: 2;
 }
 .text-title {
     font-weight: bold;
     font-size: 4.5rem;
+    line-height: 1.2;
 }
 .text-subtitle {
     font-weight: bold;
     font-size: 1.875rem;
+    line-height: 1.2;
 }
 .text-subheading {
     font-weight: bold;
     font-size: 1.125rem;
+    line-height: 1.2;
 }
 .text-link {
     color: var(--color-accent);
@@ -515,6 +519,7 @@ body {
     text-decoration: underline;
     font-size: 1.125rem;
     display: block;
+    text-underline-offset: 3px;
 }
 
 .card {
@@ -545,16 +550,18 @@ body {
     font-weight: bold;
     font-size: 1.875rem;
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 .card-subtitle {
     font-weight: bold;
     font-size: 1.125rem;
     margin-bottom: 25px;
+    line-height: 1.2;
 }
 .card-description {
     opacity: 0.7;
     font-size: 0.9375rem;
-    line-height: 1.8;
+    line-height: 2;
     margin-bottom: 20px;
 }
 
