@@ -171,10 +171,11 @@
     display: block;
 }
 
-#menu-pages + label > i {
+#menu-pages+label>i {
     transition: rotate 0.3s ease-in-out;
 }
-#menu-pages ~ ul {
+
+#menu-pages~ul {
     padding-left: 20px;
     overflow: hidden;
     max-height: 0px;
@@ -191,11 +192,11 @@
     opacity: 1;
 }
 
-#menu-pages:checked ~ ul {
+#menu-pages:checked~ul {
     max-height: 1000px;
 }
 
-#menu-pages:checked + label>i {
+#menu-pages:checked+label>i {
     rotate: 90deg;
 }
 
@@ -433,7 +434,6 @@ section.loan {
 }
 
 .loan .text-description {
-    margin-top: 65px;
     padding: 25px 30px 10px;
     opacity: 1;
     text-align: center;
@@ -658,11 +658,13 @@ section.sell {
     margin-bottom: 70px;
     font-family: "Lato", sans-serif;
     font-weight: 600;
+    flex-wrap: wrap;
 }
 
 .result .result-content>.result-content__navbar>.result-content__navbar-item {
     padding: 15px;
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
 
 .result .result-content>.result-content__navbar>.result-content__navbar-item.result-content__navbar-item-active {
@@ -829,7 +831,16 @@ section.sell {
 
     /* Section 1200px */
     section>.container {
-        --container-width: 930px;
+        --container-width: 960px;
+        --container-padding: 15px;
+    }
+
+    .result #map {
+        height: 600px;
+    }
+
+    .result .result-content {
+        padding: 55px 30px 90px;
     }
 
     .blog .blog-content .row>div:nth-child(4n) .card .card-content {
@@ -866,7 +877,7 @@ section.sell {
 
     /* Section 992px */
     section>.container {
-        --container-width: 690px;
+        --container-width: 720px;
     }
 
     .hero .search-form {
@@ -883,10 +894,15 @@ section.sell {
 
     .loan .loan-form {
         flex-flow: column;
+        padding: 0 50px;
     }
 
     .stories .stories-content .row {
         flex-flow: column-reverse;
+    }
+
+    .result .result-content {
+        padding: 55px 64px 90px;
     }
 
     section.sell {
@@ -920,6 +936,9 @@ section.sell {
     .agent-widget {
         margin-top: 50px;
     }
+    .result .result-content>.result-content__navbar {
+        gap: 10px;
+    }
 }
 
 /* Breakpoint 768 */
@@ -943,7 +962,7 @@ section.sell {
 
     /* Section 768px */
     section>.container {
-        --container-width: 510px;
+        --container-width: 540px;
     }
 
     .hero .search-form {
@@ -975,10 +994,28 @@ section.sell {
         margin: 0 15px;
     }
 
+    .loan .loan-form {
+        padding: 0 15px;
+    }
+
     .result .result-content {
         padding: 55px 30px 90px;
     }
 }
 
 /* Breakpoint 576 */
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+
+    /* Section 576px */
+    section>.container {
+        --container-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Section 576px */
+    .result .result-content {
+        padding: 55px 15px 90px;
+    }
+}
